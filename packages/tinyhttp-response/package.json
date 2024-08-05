@@ -1,0 +1,19 @@
+{
+  "name": "@durhack/tinyhttp-response",
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tinyhttp/app": "^2.3.1",
+    "@tinyhttp/res": "^2.2.3",
+    "@tinyhttp/cookie": "^2.1.1"
+  },
+  "peerDependencies": {
+    "@tinyhttp/app": "^2.3.1",
+    "@tinyhttp/res": "^2.2.3",
+    "@tinyhttp/cookie": "^2.1.1"
+  },
+  "license": "LGPL-3.0-or-later"
+}
