@@ -30,6 +30,9 @@
 ## Husky
 !.husky
 
+## Changesets
+!.changeset
+
 ## Markdowns
 !*.md
 !LICENSE

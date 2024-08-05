@@ -9,6 +9,7 @@
   "license": "LGPL-3.0-or-later",
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
+    "@changesets/cli": "^2.27.7",
     "@tinyhttp/app": "^2.3.1",
     "@types/node": "^22.1.0",
     "typescript": "^5.5.4",
