@@ -1,0 +1,16 @@
+{
+  "name": "@durhack/utils-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "type-check": "pnpm -r type-check"
+  },
+  "author": "DU Computing Society <computing.society@durham.ac.uk>",
+  "license": "LGPL-3.0-or-later",
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^22.1.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
