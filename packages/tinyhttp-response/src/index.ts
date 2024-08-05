@@ -1,6 +1,6 @@
 import { ServerResponse } from "http"
 import type { SerializeOptions } from '@tinyhttp/cookie';
-import type { DownloadOptions, FormatProps, ReadStreamOptions } from '@tinyhttp/res';
+import type { DownloadOptions, FormatProps } from '@tinyhttp/res';
 import type { TemplateEngine, TemplateEngineOptions, Response as TinyHttpResponse, App } from "@tinyhttp/app"
 
 export class Response<B = unknown> extends ServerResponse implements TinyHttpResponse<B> {
@@ -9,7 +9,7 @@ export class Response<B = unknown> extends ServerResponse implements TinyHttpRes
   declare set: (field: string | Record<string, unknown>, val?: string | any[]) => this
   declare get: (field: string) => string | number | string[];
   declare send: (body: B) => this
-  declare sendFile: (path: string, options?: ReadStreamOptions, cb?: (err?: unknown) => void) => this
+  declare sendFile: (path: string, options?: Parameters<TinyHttpResponse["sendFile"]>[1], cb?: (err?: unknown) => void) => this
   declare json: (body: B) => this
   declare status: (status: number) => this
   declare sendStatus: (statusCode: number) => this
@@ -39,6 +39,6 @@ export class Response<B = unknown> extends ServerResponse implements TinyHttpRes
    */
   declare jsonp: (obj: any) => this
   declare append: (field: string, value: any) => this
-  
-  // own members 
+
+  // own members
 }
